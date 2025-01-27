@@ -1,0 +1,9 @@
+shopifyapi
+pandas
+openpyxl
+ftplib
+
+
+
+
+
