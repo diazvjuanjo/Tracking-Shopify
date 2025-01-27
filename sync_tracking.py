@@ -1,4 +1,3 @@
-Add files via upload
 import shopify
 import json
 import ftplib
