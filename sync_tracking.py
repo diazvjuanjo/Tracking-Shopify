@@ -1,3 +1,4 @@
+import os
 import shopify
 import json
 import ftplib
