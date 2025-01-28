@@ -15,6 +15,7 @@ API_VERSION = "2024-10"
 FTP_HOST = os.getenv("FTP_HOST")
 FTP_USER = os.getenv("FTP_USER")
 FTP_PASSWORD = os.getenv("FTP_PASSWORD")
+FTP_PATH = os.getenv("FTP_PATH")
 
 def setup_shopify_session():
     shopify.Session.setup(api_key=API_KEY)
