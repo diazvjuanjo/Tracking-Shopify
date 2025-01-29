@@ -19,7 +19,7 @@ FTP_PATH = os.getenv("FTP_PATH")
 
 def setup_shopify_session():
     shopify.Session.setup(api_key=API_KEY)
-    session = shopify.Session(f"https://{SHOP_NAME}", API_VERSION, ACCESS_TOKEN)
+    session = shopify.Session(f"https://{SHOP_NAME}/admin/api/{API_VERSION}", API_VERSION, ACCESS_TOKEN)
     shopify.ShopifyResource.activate_session(session)
 
 def clear_shopify_session():
