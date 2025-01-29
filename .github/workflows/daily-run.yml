@@ -39,3 +39,12 @@ jobs:
           FTP_PATH: ${{ secrets.FTP_PATH }}
         run: |
           python sync_tracking.py
+- name: Debug environment variables
+  env:
+    SHOPIFY_API_KEY: ${{ secrets.SHOPIFY_API_KEY }}
+    SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+    SHOP_NAME: ${{ secrets.SHOP_NAME }}
+  run: |
+    echo "SHOPIFY_API_KEY=${{ secrets.SHOPIFY_API_KEY:0:4 }}***"
+    echo "SHOPIFY_ACCESS_TOKEN=${{ secrets.SHOPIFY_ACCESS_TOKEN:0:4 }}***"
+    echo "SHOP_NAME=$SHOP_NAME"
