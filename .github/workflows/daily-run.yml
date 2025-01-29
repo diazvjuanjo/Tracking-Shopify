@@ -27,6 +27,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+          - name: List installed packages
+  run: pip list
+
+
       # Paso 4: Ejecutar el script principal
       - name: Run Shopify Fulfillment App
         env:
